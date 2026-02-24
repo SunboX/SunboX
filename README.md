@@ -56,7 +56,7 @@ Saxony, Germany · Maker / Embedded & Web Dev · Open Source tinkerer
 
 ![GitHub Contribution Graph](https://ghchart.rshah.org/SunboX)
 
-## Latest Notes / Posts (optional)
+## Latest Notes / Posts (German)
 
 <!-- BLOG-POST-LIST:START -->
 - [Die Menschheit ist verrückt geworden](https://andrefiedler.de/2026/01/30/die-menschheit-ist-verrueckt-geworden/) (2026-01-30)
