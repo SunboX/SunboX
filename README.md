@@ -13,7 +13,6 @@ Saxony, Germany · Maker / Embedded & Web Dev · Open Source tinkerer
 
 - 🏷️ **labelprinter_app** — app project  
   → https://github.com/SunboX/labelprinter_app  
-  _(uses: **labelprinterkit**)_
 
 - 🧩 **labelprinterkit** — shared kit/library used by **labelprinter_app**  
   → https://github.com/SunboX/labelprinterkit
