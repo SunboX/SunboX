@@ -55,8 +55,8 @@ Saxony, Germany · Maker / Embedded & Web Dev · Open Source tinkerer
 ## GitHub Activity
 
 <p>
-  <img height="150" src="https://github-readme-stats.vercel.app/api?username=SunboX&show_icons=true&hide_title=true" />
-  <img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SunboX&layout=compact" />
+  <img height="150" src="https://github-readme-stats-sigma-five.vercel.app/api?username=SunboX&show_icons=true&hide_title=true" />
+  <img height="150" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=SunboX&layout=compact" />
 </p>
 
 ## Latest Notes / Posts (optional)
