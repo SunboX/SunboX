@@ -5,6 +5,9 @@ from __future__ import annotations
 
 import argparse
 import re
+import sys
+import time
+import urllib.error
 import urllib.request
 import xml.etree.ElementTree as ET
 from email.utils import parsedate_to_datetime
@@ -12,6 +15,13 @@ from pathlib import Path
 
 START_MARKER = "<!-- BLOG-POST-LIST:START -->"
 END_MARKER = "<!-- BLOG-POST-LIST:END -->"
+FETCH_TIMEOUT_SECONDS = 30
+FETCH_MAX_ATTEMPTS = 3
+FETCH_RETRY_DELAY_SECONDS = 5
+
+
+class FeedFetchError(RuntimeError):
+    """Raised when the RSS feed cannot be fetched after retrying."""
 
 
 def escape_markdown(text: str) -> str:
@@ -32,8 +42,28 @@ def fetch_feed_entries(feed_url: str, max_posts: int) -> list[str]:
     request = urllib.request.Request(
         feed_url, headers={"User-Agent": "readme-rss-updater/1.0"}
     )
-    with urllib.request.urlopen(request, timeout=30) as response:
-        feed_xml = response.read()
+    last_error: BaseException | None = None
+
+    for attempt in range(1, FETCH_MAX_ATTEMPTS + 1):
+        try:
+            with urllib.request.urlopen(
+                request, timeout=FETCH_TIMEOUT_SECONDS
+            ) as response:
+                feed_xml = response.read()
+            break
+        except urllib.error.URLError as error:
+            if not isinstance(error.reason, TimeoutError):
+                raise
+            last_error = error
+        except TimeoutError as error:
+            last_error = error
+
+        if attempt == FETCH_MAX_ATTEMPTS:
+            raise FeedFetchError(
+                f"timed out fetching {feed_url} after {FETCH_MAX_ATTEMPTS} attempts"
+            ) from last_error
+
+        time.sleep(FETCH_RETRY_DELAY_SECONDS * attempt)
 
     root = ET.fromstring(feed_xml)
     channel = root.find("channel")
@@ -85,7 +115,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--feed-url",
-        default="https://www.andrefiedler.de/feed/",
+        default="https://andrefiedler.de/feed/",
         help="RSS feed URL.",
     )
     parser.add_argument(
@@ -99,7 +129,11 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> None:
     args = parse_args()
-    entries = fetch_feed_entries(args.feed_url, args.max_posts)
+    try:
+        entries = fetch_feed_entries(args.feed_url, args.max_posts)
+    except FeedFetchError as error:
+        print(f"Skipping README update: {error}", file=sys.stderr)
+        return
     update_readme(Path(args.readme_path), entries)
 
 
