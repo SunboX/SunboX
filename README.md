@@ -58,11 +58,11 @@ Saxony, Germany · Maker / Embedded & Web Dev · Open Source tinkerer
 ## Latest Notes / Posts (German)
 
 <!-- BLOG-POST-LIST:START -->
+- [Das aktuell größte Problem von KI generierten Code ist ein sehr menschliches](https://andrefiedler.de/2026/04/17/das-aktuell-groesste-problem-von-ki-generierten-code-ist-ein-sehr-menschliches/) (2026-04-17)
 - [Wenn KI Dir das Programmieren abnimmt](https://andrefiedler.de/2026/03/21/wenn-ki-dir-das-programmieren-abnimmt/) (2026-03-21)
 - [Die Menschheit ist verrückt geworden](https://andrefiedler.de/2026/01/30/die-menschheit-ist-verrueckt-geworden/) (2026-01-30)
 - [Warum „Right to Repair“ oft nichts mit echter Reparierbarkeit zu tun hat](https://andrefiedler.de/2026/01/03/warum-right-to-repair-oft-nichts-mit-echter-reparierbarkeit-zu-tun-hat/) (2026-01-02)
 - [Rasentrimmer-Fäden = Mikroplastik. Und warum mich das richtig nervt.](https://andrefiedler.de/2025/10/01/rasentrimmer-faeden-mikroplastik-und-warum-mich-das-richtig-nervt/) (2025-10-01)
-- [Ein paar Gedanken zu KI](https://andrefiedler.de/2025/09/09/ein-paar-gedanken-zu-ki/) (2025-09-09)
 <!-- BLOG-POST-LIST:END -->
 
 ## Connect
