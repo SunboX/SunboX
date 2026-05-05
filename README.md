@@ -11,11 +11,28 @@ Saxony, Germany · Maker / Embedded & Web Dev · Open Source tinkerer
 
 ## Current Projects
 
-- 🏷️ **labelprinter_app** — app project  
-  → https://github.com/SunboX/labelprinter_app  
+- 🖥️ **pcb_styler_app** — browser-based KiCad PCB styler and assembly-view renderer<br>
+  → https://github.com/SunboX/pcb_styler_app
 
-- 🧩 **labelprinterkit** — shared kit/library used by **labelprinter_app**  
+- 🧰 **kicad-toolkit** — KiCad PCB parsing and deterministic SVG rendering utilities<br>
+  → https://github.com/SunboX/kicad-toolkit
+
+- 🧰 **altium-toolkit** — Altium schematic/PCB parsing and deterministic rendering utilities<br>
+  → https://github.com/SunboX/altium-toolkit
+
+- 🏷️ **labelprinterkit** — browser-ready Brother P-touch label printing toolkit with WebUSB/WebBluetooth backends<br>
   → https://github.com/SunboX/labelprinterkit
+
+- ⚡ **radpro-wifi-bridge** — ESP32-S3 Wi-Fi/USB bridge firmware that mirrors Rad Pro telemetry to MQTT<br>
+  → https://github.com/SunboX/radpro-wifi-bridge
+
+- 🏠 **radpro-home-assistant-plugin** — Home Assistant integration for reading Rad Pro devices over USB serial<br>
+  → https://github.com/SunboX/radpro-home-assistant-plugin
+
+## Other Projects (selected)
+
+- 🏷️ **labelprinter_app** — app project<br>
+  → https://github.com/SunboX/labelprinter_app
 
 - 🧾 **PDFExpert_app** — app project  
   → https://github.com/SunboX/PDFExpert_app
@@ -25,11 +42,6 @@ Saxony, Germany · Maker / Embedded & Web Dev · Open Source tinkerer
 
 - ☎️ **Rotary-Dial-Tester** — software project  
   → https://github.com/SunboX/Rotary-Dial-Tester
-
-## Other Projects (selected)
-
-- ⚡ **RadPro WiFi Bridge (ESP32-S3)** — Wi-Fi/USB bridge firmware for Rad Pro class Geiger counters  
-  → https://github.com/SunboX/radpro-wifi-bridge
 
 - 🧰 **Programmer Clip** — open-source pogo-pin clamp (OpenSCAD + KiCad) for in-circuit programming/debugging  
   → https://github.com/SunboX/Programmer_Clip
