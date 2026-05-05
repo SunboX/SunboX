@@ -34,6 +34,9 @@ Saxony, Germany · Maker / Embedded & Web Dev · Open Source tinkerer
 - 🏷️ **labelprinter_app** — app project<br>
   → https://github.com/SunboX/labelprinter_app
 
+- 🧭 **ecadforge_app** — browser-based viewing for Altium, KiCad, and Gerber files<br>
+  → https://github.com/SunboX/ecadforge_app
+
 - 🧾 **PDFExpert_app** — app project  
   → https://github.com/SunboX/PDFExpert_app
 
